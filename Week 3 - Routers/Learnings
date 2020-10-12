@@ -1,0 +1,3 @@
+We learnt how to configure multiple routers using CLI
+We also learnt configure interfaces that are not next to each other using hop addresses
+Syntax for it is - ip address "dest addr" "subnet mask" "next hop address"
