@@ -1,3 +1,3 @@
-We learnt how to assing a default route to a router. All the packets recieved by the router will be sent thruogh this default route.
+We learnt how to assign a default route to a router. All the packets recieved by the router will be sent thruogh this default route.
 This is a alternative to connecting networks using hop address which was done in the previous lab.
 The format to set a default route is: 0.0.0.0 0.0.0.0 'hop address'
