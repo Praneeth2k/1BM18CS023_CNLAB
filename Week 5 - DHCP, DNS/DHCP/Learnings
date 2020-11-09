@@ -1,0 +1,4 @@
+DHCP - Dynamic Host Configuration Protocol
+A DHCP server dynamically assigns an IP address and other network configuration parameters to each device on the network
+The server discovers the devices and offers them IP address.Individual PCs request for IP addresses and DHCP server assigns it to them. 
+(DORA - discovery, offer, request, and acknowledgement)
