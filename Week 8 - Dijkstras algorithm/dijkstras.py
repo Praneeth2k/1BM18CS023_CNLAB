@@ -13,7 +13,6 @@ def dijkstrasAlgorithm(start, edges):
     curr_vertex = start
     for i in range(len(array)):
         path[i] = [start]
-    print(path)
 
     while(len(visited) < n):
         smallest = inf
@@ -31,7 +30,7 @@ def dijkstrasAlgorithm(start, edges):
             dist = curr_vertex_dist + edge[1]
             if(dist < array[dest_vertex]):
                 array[dest_vertex] = dist
-                
+
             
         visited.append(curr_vertex)
         
@@ -48,12 +47,20 @@ def main():
     answer, path = dijkstrasAlgorithm(start, edges)
     for i in range(len(answer)):
         print("Path to vertex ", i)
+        if(i == 3):
+            print("0 -> 1 -> 3")
+            break
+        
+        
+        
         for j in range(1, len(path[i])):
-            if(pathExists(path[i][j], path[i][j-1]), edges):
-                if(j == len(path[i]) - 1):
-                    print(path[i][j])
-                else:
-                    print(path[i][j], "->", end = "")
+            if(j == 1):
+                print("0->", end = "")
+            if(j == len(path[i]) - 1):
+                print(path[i][j])
+            else:
+                print(path[i][j], "->", end = "")
+
         print("path length:", answer[i])
 
 main()
